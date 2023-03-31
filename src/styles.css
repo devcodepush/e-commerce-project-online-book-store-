@@ -1,0 +1,196 @@
+/* Universal reset for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/* Style for clickable icons */
+i {
+  cursor: pointer;
+}
+
+/* Navigation bar styles */
+.navbar {
+  background-color: #023e8a;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px 60px;
+  margin-bottom: 30px;
+}
+
+/* Styles for the cart icon and cart item count */
+.cart {
+  font-size: 30px;
+  background-color: white;
+  color: #023e8a;
+  border-radius: 5px;
+  padding: 5px;
+  position: relative;
+}
+
+.cartAmount {
+  background-color: red;
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  top: -15px;
+  right: -10px;
+  padding: 5px;
+}
+
+/* Styles for the main shop section */
+.shop {
+  display: grid;
+  grid-template-columns: repeat(4, 223px);
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+/* Media query for smaller screen sizes */
+@media (max-width: 1000px) {
+  .shop {
+    grid-template-columns: repeat(2, 223px);
+  }
+}
+
+/* Media query for even smaller screen sizes */
+@media (max-width: 500px) {
+  .shop {
+    grid-template-columns: repeat(1, 223px);
+  }
+}
+
+/* Styles for individual shop items */
+.item {
+  border: 2px solid #023e8a;
+  border-radius: 4px;
+  font-size: 10px;
+}
+
+/* Styles for the details section of each shop item */
+.details {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 5px;
+}
+
+/* Styles for the price and quantity section of each shop item */
+.price-quantity {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Styles for the buttons section of each shop item */
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  font-size: 16px;
+}
+
+/* Styles for images */
+img {
+  border: 1px solid black;
+  width: 220px;
+  height: 338px;
+  border-radius: 2px 2px 0 0;
+}
+
+/* Styles for links */
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Styles for center-aligned text */
+.text-center {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Styles for common buttons */
+.HomeBtn,
+.checkout,
+.removeAll {
+  padding: 10px;
+  border-radius: 4px;
+  color: white;
+  background: #023e8a;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Styles for checkout button */
+.checkout {
+  background-color: green;
+}
+
+/* Styles for remove all button */
+.removeAll {
+  background-color: red;
+}
+
+/* Styles for the X icon used in cart */
+.bi-x-lg {
+  color: red;
+  font-weight: bold;
+}
+
+/* Styles for the shopping cart section */
+.shopping-cart {
+  display: grid;
+  grid-template-columns: repeat(1, 320px);
+  justify-content: center;
+  gap: 15px;
+}
+
+/* Styles for the cart item container */
+.cart-item {
+  border: solid 2px #023e8a;
+  border-radius: 5px;
+  display: flex;
+}
+
+/* Styles for the image inside the cart item container */
+.cart-item > img {
+  width: 115px;
+  height: 115px;
+  border: solid 1px #023e8a;
+}
+
+/* Styles for the title and price container */
+.title-price-x {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Styles for the title container */
+.title-price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Styles for the cart item price */
+.cart-item-price {
+  border: solid 1px black;
+  background-color: #023e8a;
+  color: white;
+  border-radius: 2px;
+  padding: 3px 6px;
+}
