@@ -1,0 +1,54 @@
+<!-- This declares the document type to be HTML. -->
+<!DOCTYPE html>
+
+<!-- This starts the HTML document and sets the language to English. -->
+<html lang="en">
+  <head>
+    <!-- This section contains metadata about the document. -->
+    <meta charset="UTF-8" />
+    <!-- This sets the character encoding to UTF-8. -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- This sets the compatibility mode for Internet Explorer. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- This sets the viewport dimensions for mobile devices. -->
+    <title>Book Store</title>
+    <!-- This sets the title of the document. -->
+    <link rel="stylesheet" href="src/styles.css" />
+    <!-- This links to an external stylesheet. -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <!-- This links to an external stylesheet. -->
+  </head>
+
+  <body>
+    <!-- This section contains the content of the document. -->
+    <div class="navbar">
+      <!-- This creates a navigation bar. -->
+      <a href="index.html">
+        <!-- This creates a link to the homepage. -->
+        <h2>Book Store</h2>
+        <!-- This sets the heading text. -->
+      </a>
+      <a href="cart.html">
+        <!-- This creates a link to the shopping cart. -->
+        <div class="cart">
+          <!-- This creates a shopping cart icon. -->
+          <i class="bi bi-cart3"></i>
+          <!-- This adds a Bootstrap icon to the cart. -->
+          <div id="cartAmount" class="cartAmount">0</div>
+          <!-- This displays the number of items in the cart. -->
+        </div>
+      </a>
+    </div>
+
+    <div class="shop" id="shop"></div>
+    <!-- This creates a container for the shop items. -->
+
+    <script src="src/data.js"></script>
+    <!-- This links to a JavaScript file that contains data about the shop items. -->
+    <script src="src/index.js"></script>
+    <!-- This links to a JavaScript file that creates the shop items on the webpage. -->
+  </body>
+</html>
